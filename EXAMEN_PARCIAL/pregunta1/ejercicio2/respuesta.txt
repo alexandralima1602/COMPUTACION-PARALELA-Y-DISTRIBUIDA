@@ -1,0 +1,45 @@
+alumno@administrador-20VE:~/ExamenParcial-C8286$ sudo python3  multi.py -n 1 -L a:30:200 -M 300 -T
+ARG seed 0
+ARG job_num 3
+ARG max_run 100
+ARG max_wset 200
+ARG job_list a:30:200
+ARG affinity 
+ARG per_cpu_queues False
+ARG num_cpus 1
+ARG quantum 10
+ARG peek_interval 30
+ARG warmup_time 10
+ARG cache_size 300
+ARG random_order False
+ARG trace False
+ARG trace_time True
+ARG trace_cache False
+ARG trace_sched False
+ARG compute False
+
+Nombre del trabajo:a tiempo_de_ejecución:30 tamaño_del_conjunto_de_trabajo:200
+
+Planificador cola central: ['a']
+
+   0   a [ 29]      
+   1   a [ 28]      
+   2   a [ 27]      
+   3   a [ 26]      
+   4   a [ 25]      
+   5   a [ 24]      
+   6   a [ 23]      
+   7   a [ 22]      
+   8   a [ 21]      
+   9   a [ 20]      
+----------------
+  10   a [ 18]      
+  11   a [ 16]      
+  12   a [ 14]      
+  13   a [ 12]      
+  14   a [ 10]      
+  15   a [  8]      
+  16   a [  6]      
+  17   a [  4]      
+  18   a [  2]      
+  19   a [  0]      
