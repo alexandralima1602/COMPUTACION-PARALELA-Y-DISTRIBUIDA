@@ -1,0 +1,122 @@
+La primera simulación ejecutará solo un trabajo, que tiene un tiempo de ejecución de 30 y
+un tamaño de conjunto de trabajo de 200. Ejecuta este trabajo (llamado trabajo 'a' aquí) en
+una CPU simulada de la siguiente manera: ./multi.py -n 1 -L a:30:200. ¿Cuánto tiempo
+tomará completarse? Activa la bandera -c para ver una respuesta final, y la bandera -t para
+ver un rastro del trabajo paso a paso y cómo se programa.
+RESPUESTA:
+alumno@administrador-20VE:~/ExamenParcial-C8286$ sudo python3  multi.py -n 1 -L a:30:200
+ARG seed 0
+ARG job_num 3
+ARG max_run 100
+ARG max_wset 200
+ARG job_list a:30:200
+ARG affinity 
+ARG per_cpu_queues False
+ARG num_cpus 1
+ARG quantum 10
+ARG peek_interval 30
+ARG warmup_time 10
+ARG cache_size 100
+ARG random_order False
+ARG trace False
+ARG trace_time False
+ARG trace_cache False
+ARG trace_sched False
+ARG compute False
+
+Nombre del trabajo:a tiempo_de_ejecución:30 tamaño_del_conjunto_de_trabajo:200
+
+Planificador cola central: ['a']
+
+--------------------------------bandera -c
+
+alumno@administrador-20VE:~/ExamenParcial-C8286$ sudo python3  multi.py -n 1 -L a:30:200 -c
+ARG seed 0
+ARG job_num 3
+ARG max_run 100
+ARG max_wset 200
+ARG job_list a:30:200
+ARG affinity 
+ARG per_cpu_queues False
+ARG num_cpus 1
+ARG quantum 10
+ARG peek_interval 30
+ARG warmup_time 10
+ARG cache_size 100
+ARG random_order False
+ARG trace False
+ARG trace_time False
+ARG trace_cache False
+ARG trace_sched False
+ARG compute True
+
+Nombre del trabajo:a tiempo_de_ejecución:30 tamaño_del_conjunto_de_trabajo:200
+
+Planificador cola central: ['a']
+
+
+Tiempo de finalización 30
+
+Estadísticas por CPU
+  CPU 0  utilización 100.00 [ caliente 0.00 ]
+
+--------------------------------------------bandera -t
+
+alumno@administrador-20VE:~/ExamenParcial-C8286$ sudo python3  multi.py -n 1 -L a:30:200 -t
+ARG seed 0
+ARG job_num 3
+ARG max_run 100
+ARG max_wset 200
+ARG job_list a:30:200
+ARG affinity 
+ARG per_cpu_queues False
+ARG num_cpus 1
+ARG quantum 10
+ARG peek_interval 30
+ARG warmup_time 10
+ARG cache_size 100
+ARG random_order False
+ARG trace True
+ARG trace_time False
+ARG trace_cache False
+ARG trace_sched False
+ARG compute False
+
+Nombre del trabajo:a tiempo_de_ejecución:30 tamaño_del_conjunto_de_trabajo:200
+
+Planificador cola central: ['a']
+
+   0   a      
+   1   a      
+   2   a      
+   3   a      
+   4   a      
+   5   a      
+   6   a      
+   7   a      
+   8   a      
+   9   a      
+----------
+  10   a      
+  11   a      
+  12   a      
+  13   a      
+  14   a      
+  15   a      
+  16   a      
+  17   a      
+  18   a      
+  19   a      
+----------
+  20   a      
+  21   a      
+  22   a      
+  23   a      
+  24   a      
+  25   a      
+  26   a      
+  27   a      
+  28   a      
+  29   a      
+
+
