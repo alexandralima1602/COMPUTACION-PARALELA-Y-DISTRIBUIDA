@@ -19,23 +19,24 @@ Debea describir los cuatro estados del protocolo MESI (Modificado, Exclusivo, Co
 
 - Inválido (I): La línea de caché no contiene datos válidos.
 
+ESTE ES UN EJEMPLO DE TRANSICIONES DE ESTADOS DE CACHE:
 
-## Un procesador lee una línea de caché por primera vez:
+- Un procesador lee una línea de caché por primera vez:
 
 La línea de caché inicialmente se encontraba en estado Inválido (I).
 Cuando el procesador realiza la lectura, la línea pasa al estado Exclusivo (E), ya que es la única copia válida en el sistema.
 
-## Un segundo procesador lee la misma línea de caché:
+- Un segundo procesador lee la misma línea de caché:
 
 Cuando el segundo procesador intenta leer la línea, el protocolo MESI detecta que ya existe una copia válida.
 La línea de caché pasa al estado Compartido (S), ya que ahora hay dos copias válidas en el sistema.
 
-## El primer procesador modifica la línea de caché:
+- El primer procesador modifica la línea de caché:
 
 Cuando el primer procesador modifica la línea, el protocolo MESI detecta el cambio y actualiza el estado de la línea a Modificado (M).
 Ahora, el primer procesador tiene permiso para escribir en esa línea de caché, y es la única copia válida en el sistema.
 
-## El segundo procesador intenta leer la línea de caché modificada:
+- El segundo procesador intenta leer la línea de caché modificada:
 
 Cuando el segundo procesador intenta leer la línea de caché, el protocolo MESI detecta que la copia en la caché del primer procesador está modificada.
 El protocolo MESI invalida la copia del segundo procesador, llevándola al estado Inválido (I).
@@ -43,3 +44,4 @@ Luego, el protocolo MESI transfiere la copia modificada del primer procesador al
 
 De esta manera, el protocolo MESI mantiene la coherencia de caché, asegurando que todas las copias de una línea de caché sean coherentes y que las actualizaciones se propaguen correctamente entre los diferentes procesadores.
 
+## 2 . Implementa un programa en C utilizando POSIX threads (pthread) que demuestre el uso de mutexes para proteger una variable compartida. El programa debe crear varios hilos que incrementen una variable global compartida de manera segura.
