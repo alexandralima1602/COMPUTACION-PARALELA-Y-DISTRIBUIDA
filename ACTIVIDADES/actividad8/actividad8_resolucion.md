@@ -71,3 +71,34 @@ for t in threads:
 
 print(f"Final value of shared_variable: {shared_variable}")
 -------------------------------------
+## 3 . Describe los diferentes modelos de consistencia de memoria (consistencia estricta, consistencia secuencial, consistencia causal) y cómo afectan el comportamiento observable de los programas en un sistema de memoria compartida.
+
+Respuesta Esperada:
+
+Debes explicar:
+
+- Consistencia estricta: Todas las operaciones de memoria son vistas por todos los procesadores en el orden exacto en que ocurren.
+- Consistencia secuencial: Las operaciones de memoria de todos los procesadores se intercalan en un orden secuencial que es consistente con el orden de programa de cada procesador.
+- Consistencia causal: Solo las operaciones de memoria que son causalmente relacionadas deben ser vistas en el mismo orden por todos los procesadores.
+
+## cómo afectan el comportamiento observable de los programas:
+
+- Consistencia estricta (Strict Consistency):
+
+Todas las operaciones de memoria se ven en el orden exacto en que ocurren.
+Comportamiento más predecible, pero difícil de implementar eficientemente.
+
+- Consistencia secuencial (Sequential Consistency):
+
+Las operaciones se intercalan en un orden secuencial consistente con cada procesador.
+Más relajado que la consistencia estricta, permite optimizaciones.
+Comportamiento ligeramente menos predecible.
+
+- Consistencia causal (Causal Consistency):
+
+Solo las operaciones causalmente relacionadas deben verse en el mismo orden.
+Más relajado que la consistencia secuencial, permite mayor paralelismo.
+Comportamiento más impredecible, con reordenes de operaciones no relacionadas.
+A medida que se relaja el modelo de consistencia, se permite una mayor optimización y paralelismo, pero el comportamiento observable de los programas se vuelve menos predecible. Los programadores deben considerar estos trade-offs al diseñar sistemas de memoria compartida.
+
+
