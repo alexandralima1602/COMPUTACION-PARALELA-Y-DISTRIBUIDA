@@ -19,7 +19,6 @@ Debea describir los cuatro estados del protocolo MESI (Modificado, Exclusivo, Co
 
 - Inválido (I): La línea de caché no contiene datos válidos.
 
-Veamos algunos ejemplos de transiciones de estados:
 
 ## Un procesador lee una línea de caché por primera vez:
 
