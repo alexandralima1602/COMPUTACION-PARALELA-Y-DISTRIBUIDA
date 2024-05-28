@@ -80,7 +80,7 @@ Debes explicar:
 - Consistencia estricta: Todas las operaciones de memoria son vistas por todos los procesadores en el orden exacto en que ocurren.
 - Consistencia secuencial: Las operaciones de memoria de todos los procesadores se intercalan en un orden secuencial que es consistente con el orden de programa de cada procesador.
 - Consistencia causal: Solo las operaciones de memoria que son causalmente relacionadas deben ser vistas en el mismo orden por todos los procesadores.
-
+## MI RESPUESTA:
 ## cómo afectan el comportamiento observable de los programas:
 
 - Consistencia estricta (Strict Consistency):
@@ -99,6 +99,7 @@ Comportamiento ligeramente menos predecible.
 Solo las operaciones causalmente relacionadas deben verse en el mismo orden.
 Más relajado que la consistencia secuencial, permite mayor paralelismo.
 Comportamiento más impredecible, con reordenes de operaciones no relacionadas.
+
 A medida que se relaja el modelo de consistencia, se permite una mayor optimización y paralelismo, pero el comportamiento observable de los programas se vuelve menos predecible. Los programadores deben considerar estos trade-offs al diseñar sistemas de memoria compartida.
 
 
