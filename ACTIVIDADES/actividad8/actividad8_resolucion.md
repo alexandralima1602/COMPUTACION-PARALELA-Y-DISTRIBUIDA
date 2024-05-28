@@ -4,10 +4,10 @@
 Respuesta Esperada:
 
 Debea describir los cuatro estados del protocolo MESI (Modificado, Exclusivo, Compartido, Inválido) y explicar las transiciones de estados cuando:
-Un procesador lee una línea de caché por primera vez.
-Un segundo procesador lee la misma línea de caché.
-El primer procesador modifica la línea de caché.
-El segundo procesador intenta leer la línea de caché modificada.
+- Un procesador lee una línea de caché por primera vez.
+- Un segundo procesador lee la misma línea de caché.
+- El primer procesador modifica la línea de caché.
+- El segundo procesador intenta leer la línea de caché modificada.
 
 ## MI RESPUESTA:
 
