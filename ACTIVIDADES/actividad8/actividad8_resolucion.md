@@ -102,4 +102,31 @@ Debes explicar:
 
 A medida que se relaja el modelo de consistencia, se permite una mayor optimización y paralelismo, pero el comportamiento observable de los programas se vuelve menos predecible. Los programadores deben considerar estos trade-offs al diseñar sistemas de memoria compartida.
 
+## 4 . Explica cómo el paso de mensajes en un sistema de memoria distribuida permite la comunicación entre nodos. Describa las ventajas y desventajas del paso de mensajes comparado con la memoria compartida.
 
+Respuesta Esperada:
+
+Debes explicar:
+
+- Cómo los nodos envían y reciben mensajes para compartir datos.
+- Ventajas: No requiere coherencia de caché, escalabilidad mejorada, adecuado para sistemas distribuidos.
+- Desventajas: Latencia en la comunicación, mayor complejidad en la programación, sobrecarga de comunicación.
+
+## MI RESPUESTA
+## En un sistema de memoria distribuida, los nodos se comunican entre sí mediante el paso de mensajes:
+
+- Los nodos envían y reciben mensajes para compartir datos y coordinar tareas.
+- Librerías como MPI (Message Passing Interface) facilitan la comunicación entre nodos.
+
+## Ventajas del paso de mensajes:
+
+No requiere mantener coherencia de caché, ya que cada nodo tiene su propia memoria.
+Mejor escalabilidad que la memoria compartida, ya que la comunicación se realiza de manera explícita entre nodos.
+Adecuado para sistemas distribuidos, donde la memoria compartida sería impráctica.
+
+## Desventajas del paso de mensajes:
+
+- Mayor latencia en la comunicación entre nodos, en comparación con la memoria compartida.
+- Programación más compleja, ya que los desarrolladores deben gestionar explícitamente la comunicación.
+- Sobrecarga de comunicación, ya que los mensajes deben enviarse y recibirse entre nodos.
+- En resumen, el paso de mensajes permite la comunicación entre nodos en un sistema de memoria distribuida, ofreciendo mejor escalabilidad, pero con mayor latencia y complejidad de programación en comparación con la memoria compartida.
