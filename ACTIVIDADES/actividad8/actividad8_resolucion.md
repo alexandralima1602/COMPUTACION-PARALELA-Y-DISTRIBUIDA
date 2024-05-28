@@ -45,3 +45,29 @@ Luego, el protocolo MESI transfiere la copia modificada del primer procesador al
 De esta manera, el protocolo MESI mantiene la coherencia de caché, asegurando que todas las copias de una línea de caché sean coherentes y que las actualizaciones se propaguen correctamente entre los diferentes procesadores.
 
 ## 2 . Implementa un programa en C utilizando POSIX threads (pthread) que demuestre el uso de mutexes para proteger una variable compartida. El programa debe crear varios hilos que incrementen una variable global compartida de manera segura.
+------------------------
+import threading
+
+NUM_THREADS = 5
+NUM_INCREMENTS = 1000000
+
+shared_variable = 0
+lock = threading.Lock()
+
+def increment():
+    global shared_variable
+    for _ in range(NUM_INCREMENTS):
+        with lock:
+            shared_variable += 1
+
+threads = []
+for _ in range(NUM_THREADS):
+    t = threading.Thread(target=increment)
+    threads.append(t)
+    t.start()
+
+for t in threads:
+    t.join()
+
+print(f"Final value of shared_variable: {shared_variable}")
+-------------------------------------
