@@ -257,14 +257,14 @@ La coherencia de caché y la consistencia de caché son conceptos relacionados p
 
 - Coherencia de Caché:
 
-    . La coherencia de caché garantiza que todas las copias de un mismo dato en las diferentes cachés de los procesadores sean iguales.
-    . Esto significa que cuando un procesador modifica un dato, esa modificación se propaga a todas las demás copias del dato en las cachés de otros procesadores.
-    . La falta de coherencia de caché puede causar condiciones de carrera, donde los procesadores ven diferentes valores para el mismo dato.
+    - La coherencia de caché garantiza que todas las copias de un mismo dato en las diferentes cachés de los procesadores sean iguales.
+    - Esto significa que cuando un procesador modifica un dato, esa modificación se propaga a todas las demás copias del dato en las cachés de otros procesadores.
+    - La falta de coherencia de caché puede causar condiciones de carrera, donde los procesadores ven diferentes valores para el mismo dato.
 - Consistencia de Caché:
 
-    . La consistencia de caché garantiza el orden en que las operaciones de memoria son vistas por los diferentes procesadores.
-    . Esto significa que si un procesador realiza una secuencia de operaciones de memoria, los demás procesadores verán esas operaciones en el mismo orden.
-    . La falta de consistencia de caché puede causar problemas de sincronización, donde los procesadores no ven las operaciones en el orden esperado.
+    - La consistencia de caché garantiza el orden en que las operaciones de memoria son vistas por los diferentes procesadores.
+    - Esto significa que si un procesador realiza una secuencia de operaciones de memoria, los demás procesadores verán esas operaciones en el mismo orden.
+    - La falta de consistencia de caché puede causar problemas de sincronización, donde los procesadores no ven las operaciones en el orden esperado.
 
 Ejemplos:
 
@@ -365,19 +365,17 @@ Debes explicar:
 El sistema de snoop bus es una técnica utilizada en sistemas multiprocesador para mantener la coherencia de caché. Funciona de la siguiente manera:
 
 - Funcionamiento del Snoop Bus:
-
-.Todas las cachés de los procesadores están conectadas a un bus compartido, llamado "snoop bus".
-.Cuando un procesador realiza una operación de lectura o escritura en su propia caché, esa operación se transmite a través del snoop bus.
-.Todas las demás cachés "observan" (snoop) el bus, detectando las operaciones realizadas por otros procesadores.
-.Cada caché mantiene información sobre el estado de sus propias líneas de caché (por ejemplo, si están modificadas, compartidas, etc.) usando protocolos como MESI.
-.Cuando una caché detecta una operación relevante en el bus (como una escritura a una línea de caché que posee), actualiza su propia información de coherencia para mantener la consistencia de los datos.
+    - Todas las cachés de los procesadores están conectadas a un bus compartido, llamado "snoop bus".
+    - Cuando un procesador realiza una operación de lectura o escritura en su propia caché, esa operación se transmite a través del snoop bus.
+    - Todas las demás cachés "observan" (snoop) el bus, detectando las operaciones realizadas por otros procesadores.
+    - Cada caché mantiene información sobre el estado de sus propias líneas de caché (por ejemplo, si están modificadas, compartidas, etc.) usando protocolos como MESI.
+    - Cuando una caché detecta una operación relevante en el bus (como una escritura a una línea de caché que posee), actualiza su propia información de coherencia para mantener la consistencia de los datos.
 
 - Desafíos del Snoop Bus:
-
-.Escalabilidad limitada: A medida que se agregan más procesadores, el tráfico en el snoop bus aumenta, lo que puede limitar la escalabilidad del sistema.
-.Latencia: El hecho de que todas las operaciones de memoria deban pasar por el snoop bus introduce latencia adicional, lo que puede afectar el rendimiento.
-.Complejidad de implementación: Gestionar la coherencia de caché utilizando un snoop bus es técnicamente complejo, especialmente cuando se trabaja con protocolos de coherencia más avanzados.
-.Consumo de energía: El tráfico constante en el snoop bus consume una cantidad significativa de energía, lo que puede ser un problema en sistemas con restricciones de alimentación.
+    - Escalabilidad limitada: A medida que se agregan más procesadores, el tráfico en el snoop bus aumenta, lo que puede limitar la escalabilidad del sistema.
+    - Latencia: El hecho de que todas las operaciones de memoria deban pasar por el snoop bus introduce latencia adicional, lo que puede afectar el rendimiento.
+    - Complejidad de implementación: Gestionar la coherencia de caché utilizando un snoop bus es técnicamente complejo, especialmente cuando se trabaja con protocolos de coherencia más avanzados.
+    - Consumo de energía: El tráfico constante en el snoop bus consume una cantidad significativa de energía, lo que puede ser un problema en sistemas con restricciones de alimentación.
 
 Para mitigar estos desafíos, se han desarrollado otras técnicas de coherencia de caché, como los directorios de coherencia, que pueden escalar mejor y reducir la complejidad del diseño. Sin embargo, el snoop bus sigue siendo una solución ampliamente utilizada, especialmente en sistemas multiprocesador más pequeños y de bajo costo.
 
