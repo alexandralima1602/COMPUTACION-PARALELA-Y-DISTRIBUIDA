@@ -4,7 +4,7 @@ Objetivo del Proyecto:
 Desarrollar y orquestar una arquitectura de microservicios utilizando Flask, Docker y Kubernetes 
 para implementar una aplicación web escalable y modular. 
 
-## Sprint 1: Diseño y desarrollo de una arquitectura de microservicios utilizando Flask y Docker 
+# Sprint 1: Diseño y desarrollo de una arquitectura de microservicios utilizando Flask y Docker 
 
 Objetivos: 
 
@@ -30,13 +30,13 @@ Dockerización de microservicios:
 - Escribir archivos Dockerfile para cada microservicio. 
 - Construir imágenes Docker y probar los contenedores localmente.
   
-Entregables: 
+## Entregables: 
 - Diagramas de la arquitectura de microservicios. 
 - Código fuente de los microservicios con Flask. 
 - Archivos Dockerfile para cada microservicio. 
 - Imágenes Docker construidas y contenedores probados localmente. 
 
-## Sprint 2: Implementación de servicios individuales y configuración de docker compose 
+# Sprint 2: Implementación de servicios individuales y configuración de docker compose 
 Objetivos: 
 • Implementar los servicios individuales con todas sus funcionalidades. 
 • Configurar Docker Compose para gestionar los servicios y sus dependencias. 
@@ -59,19 +59,19 @@ dependencias.
 - Configurar redes y volúmenes para permitir la comunicación entre servicios y persistencia de 
 datos.
 
-Entregables: 
+## Entregables: 
 
 - Código fuente de los microservicios con todas las funcionalidades. 
 - Pruebas unitarias y de integración. 
 - Archivo docker-compose.yml configurado. 
 - Contenedores Docker para cada servicio, gestionados por Docker Compose. 
 
-## Sprint 3: Despliegue y Orquestación de Microservicios Utilizando Kubernetes y Presentación de la Arquitectura 
+# Sprint 3: Despliegue y Orquestación de Microservicios Utilizando Kubernetes y Presentación de la Arquitectura 
 Objetivos: 
 
 - Desplegar los microservicios en un clúster de Kubernetes. 
 - Orquestar los microservicios utilizando Kubernetes y preparar una presentación detallada.
-- 
+  
 Actividades:
 
 Despliegue en Kubernetes: 
@@ -89,7 +89,7 @@ proyecto.
 - Incluir diagramas de la arquitectura, demostraciones en vivo del sistema funcionando, y 
 análisis de casos de uso específicos.
 
-# Entregables: 
+## Entregables: 
 
 - Archivos de configuración de Kubernetes para los microservicios. 
 - Clúster de Kubernetes con los microservicios desplegados y orquestados. 
