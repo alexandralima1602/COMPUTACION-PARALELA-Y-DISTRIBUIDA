@@ -11,7 +11,7 @@ services:
   users-service:
 	build: ./users-service
 	ports:
-  	- "5001:5000"
+  	- "5001:5001"
 	networks:
   	- app-network
 	depends_on:
@@ -20,7 +20,7 @@ services:
   orders-service:
 	build: ./orders-service
 	ports:
-  	- "5004:5000"
+  	- "5004:5004"
 	networks:
   	- app-network
 	depends_on:
@@ -30,7 +30,7 @@ services:
   products-service:
 	build: ./products-service
 	ports:
-  	- "5002:5000"
+  	- "5002:5002"
 	networks:
   	- app-network
 	depends_on:
