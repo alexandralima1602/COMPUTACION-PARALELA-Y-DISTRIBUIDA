@@ -1,11 +1,15 @@
 ## Proyecto 3: Orquestación de microservicios con Docker y Kubernetes – Alejandra Lima 
 Objetivo del Proyecto: 
+
 Desarrollar y orquestar una arquitectura de microservicios utilizando Flask, Docker y Kubernetes 
 para implementar una aplicación web escalable y modular. 
 Sprint 1: Diseño y desarrollo de una arquitectura de microservicios utilizando Flask y Docker 
+
 Objetivos: 
-• Diseñar la arquitectura de microservicios. 
-• Desarrollar y contenedorar los servicios básicos utilizando Flask y Docker. 
+
+- Diseñar la arquitectura de microservicios. 
+- Desarrollar y contenedorar los servicios básicos utilizando Flask y Docker.
+  
 Actividades: 
 Diseño de la arquitectura: 
 • Dividir la aplicación en varios microservicios, cada uno con una responsabilidad específica 
