@@ -1,9 +1,10 @@
-## Proyecto 3: Orquestación de microservicios con Docker y Kubernetes – Alejandra Lima 
+## Proyecto 3: Orquestación de microservicios con Docker y Kubernetes – Alexandra Lima 
 Objetivo del Proyecto: 
 
 Desarrollar y orquestar una arquitectura de microservicios utilizando Flask, Docker y Kubernetes 
 para implementar una aplicación web escalable y modular. 
-Sprint 1: Diseño y desarrollo de una arquitectura de microservicios utilizando Flask y Docker 
+
+## Sprint 1: Diseño y desarrollo de una arquitectura de microservicios utilizando Flask y Docker 
 
 Objetivos: 
 
@@ -11,28 +12,31 @@ Objetivos:
 - Desarrollar y contenedorar los servicios básicos utilizando Flask y Docker.
   
 Actividades: 
+
 Diseño de la arquitectura: 
-• Dividir la aplicación en varios microservicios, cada uno con una responsabilidad específica 
+
+- Dividir la aplicación en varios microservicios, cada uno con una responsabilidad específica 
 (por ejemplo, servicio de autenticación, servicio de usuarios, servicio de productos, servicio 
-de pedidos). 
-• Definir las interfaces y puntos de comunicación entre los microservicios (por ejemplo, APIs 
+de pedidos).
+- Definir las interfaces y puntos de comunicación entre los microservicios (por ejemplo, APIs 
 RESTful). 
 Desarrollo de microservicios: 
-• Crear aplicaciones Flask para cada microservicio. 
-• Implementar las funcionalidades básicas de cada servicio (por ejemplo, endpoints para 
-CRUD). 
+- Crear aplicaciones Flask para cada microservicio. 
+- Implementar las funcionalidades básicas de cada servicio (por ejemplo, endpoints para 
+CRUD).
+
 Dockerización de microservicios: 
-• Escribir archivos Dockerfile para cada microservicio. 
-• Construir imágenes Docker y probar los contenedores localmente. 
+
+- Escribir archivos Dockerfile para cada microservicio. 
+- Construir imágenes Docker y probar los contenedores localmente.
+  
 Entregables: 
-• Diagramas de la arquitectura de microservicios. 
-• Código fuente de los microservicios con Flask. 
-• Archivos Dockerfile para cada microservicio. 
-• Imágenes Docker construidas y contenedores probados localmente. 
-Computación Paralela y Distribuida 
-Departamento Académico de Ingeniería 
-C8286-Computación Paralela y Distribuida 
-Sprint 2: Implementación de servicios individuales y configuración de docker compose 
+- Diagramas de la arquitectura de microservicios. 
+- Código fuente de los microservicios con Flask. 
+- Archivos Dockerfile para cada microservicio. 
+- Imágenes Docker construidas y contenedores probados localmente. 
+
+## Sprint 2: Implementación de servicios individuales y configuración de docker compose 
 Objetivos: 
 • Implementar los servicios individuales con todas sus funcionalidades. 
 • Configurar Docker Compose para gestionar los servicios y sus dependencias. 
